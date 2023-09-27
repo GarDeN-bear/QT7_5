@@ -15,22 +15,15 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="3">
-     <widget class="QPushButton" name="pb_lap">
+    <item row="0" column="2">
+     <widget class="QLabel" name="l_time">
       <property name="text">
-       <string>PushButton</string>
+       <string>TextLabel</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="4" column="1">
      <widget class="QPushButton" name="pb_clear">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QPushButton" name="pb_startStop">
       <property name="text">
        <string>PushButton</string>
       </property>
@@ -39,8 +32,25 @@
     <item row="1" column="2">
      <widget class="QTextEdit" name="te_time"/>
     </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="l_time">
+    <item row="4" column="2">
+     <widget class="QPushButton" name="pb_startStop">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QTextBrowser" name="tb_laps"/>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="pb_lap">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="l_laps">
       <property name="text">
        <string>TextLabel</string>
       </property>

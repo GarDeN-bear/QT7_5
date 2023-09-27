@@ -19,15 +19,17 @@ public:
     // Количество кругов
     void Lap();
     // Установить время
-    void setTime(int time);
+    void setTime(float time);
     // Установить круг
     void setLap(int lap);
     // Получить текущее время
-    int getCurrentTime();
+    float getCurrentTime();
     // Получить текущий круг
     int getCurrentLap();
     // Проверить, запущен ли секундомер
     bool isStart();
+    //Получить адрес qTimer
+    QTimer* getQTimer();
 
 signals:
     void sig_Start();
@@ -37,8 +39,9 @@ signals:
 
 private:
     bool isStart_; // флаг работы секундомера
-    int currentTime_; // текущее время
+    float currentTime_; // текущее время
     int currentLap_; // текущий круг
+    QTimer* qTimer;
 };
 
 #endif // STOPWATCH_H
