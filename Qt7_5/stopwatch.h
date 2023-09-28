@@ -24,6 +24,8 @@ public:
     void setLap(int lap);
     // Получить текущее время
     float getCurrentTime();
+    // Получить начальное время
+    float getStartTime();
     // Получить текущий круг
     int getCurrentLap();
     // Проверить, запущен ли секундомер
@@ -40,6 +42,7 @@ signals:
 private:
     bool isStart_; // флаг работы секундомера
     float currentTime_; // текущее время
+    float startTime_; // время от начала работы круга
     int currentLap_; // текущий круг
     QTimer* qTimer;
 };
